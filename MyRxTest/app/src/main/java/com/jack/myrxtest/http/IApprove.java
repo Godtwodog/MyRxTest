@@ -5,6 +5,7 @@ import com.jack.myrxtest.config.UrlConfig;
 
 import java.util.Map;
 
+import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.QueryMap;
 import rx.Observable;
@@ -16,6 +17,6 @@ import rx.Observable;
  */
 public interface IApprove {
    @GET(UrlConfig.BASE_URL)
-   Observable<DouyuBean> getDouyuData(@QueryMap() Map<String,String> params);
+   Call<DouyuBean> getDouyuData(@QueryMap() Map<String,String> params);
 
 }
