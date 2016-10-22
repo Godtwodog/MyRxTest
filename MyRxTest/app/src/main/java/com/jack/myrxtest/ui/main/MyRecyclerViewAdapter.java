@@ -4,6 +4,7 @@ import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.ViewGroup;
 
+import com.jack.myrxtest.R;
 import com.jack.myrxtest.config.MyRecyclerViewAdapterHelp;
 
 import java.util.List;
@@ -19,7 +20,7 @@ public class MyRecyclerViewAdapter  extends MyRecyclerViewAdapterHelp {
 
     @Override
     public int getLayoutId() {
-        return 0;
+        return R.layout.item_recyclerview_main;
     }
 
     @Override
